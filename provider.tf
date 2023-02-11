@@ -1,10 +1,11 @@
 provider "aws" {
+  shared_credentials_file = "[$HOME/.aws/credentials]"
+  profile = "terraform-dev"
   region  = "ap-northeast-1"
-  profile = "terraform"
 
-  default_tags {
+default_tags {
     tags = {
-      Managed = "terraform"
+      Managed = "tada-terraform"
     }
   }
 }
