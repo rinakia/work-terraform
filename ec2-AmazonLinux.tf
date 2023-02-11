@@ -5,9 +5,9 @@ resource "aws_instance" "test" {
   key_name      = "tada-ppk"
   vpc_security_group_ids = [
     "sg-05cbb847323ab71af"
-    ]
+  ]
 
   tags = {
-    Name = "tf_test_AmazonLinux2"
+    Name = "tada_tf_AmazonLinux2"
   }
 }
